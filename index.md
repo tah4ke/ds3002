@@ -25,7 +25,7 @@ Qwiklabs - Provides hands-on labs in AWS & GCP cloud services. Many of these are
 Terms - An etherpad list of terms and concepts touched on. This page will change over the course of the semester and be a good resource for exam review. Students can edit this page!
 Student Action Items
 
- Create an AWS account 
+[]Create an AWS account 
  Join AWS Educate / request credits 
  Create a GCP account 
  Create a free GitHub account 
