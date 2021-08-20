@@ -1,4 +1,3 @@
-https://discord.gg/Cr73MxMp
 
 # Course Description #
 By definition, "data science" must make meaning out of ever-growing pools of data. But the researcher quickly discovers that the hand examination of any data, while useful for granular analysis, is never adequate for large samples. To produce data science at scale, researchers must make effective use of workflows, pipelines, and processes to ingest, parse, and transform data with tools and automation.
@@ -18,7 +17,7 @@ Support or Contact
 Students in this course will be expected to use the following pieces of software on a weekly basis:
 
 
-[Discord] (https://discord.com/invite/Cr73MxMp) - Discord will serve as our hub for discussions, Q&A, and distributing extra material specific to topics or assignments. Download the software, create a Discord account, and [join the class server] (https://discord.com/invite/Cr73MxMp).
+[Discord](https://discord.com/invite/Cr73MxMp) - Discord will serve as our hub for discussions, Q&A, and distributing extra material specific to topics or assignments. Download the software, create a Discord account, and [join the class server](https://discord.com/invite/Cr73MxMp).
 Git/GitHub - Students are expected to know how to version control their material using Git. Some programming assignments will require submission via commits pushed to GitHub. Need a tutorial? If you do not have a GitHub account, create one now. Also, sign up for the GitHub Education Student Developer Pack
 Amazon Web Services - All students will use AWS accounts and credits for this course. Please click the link to learn more about the AWS Educate program and your options for creating an account.
 Google Cloud Platform - Students will also work with GCP to broaden their hands-on experience. Google has donated $50 credit to each student for work in their environment.
