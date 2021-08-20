@@ -13,7 +13,7 @@ Policies
 Other Details
 Support or Contact
 
-# Tools#
+# Tools #
 
 Students in this course will be expected to use the following pieces of software on a weekly basis:
 
