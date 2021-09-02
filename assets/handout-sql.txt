@@ -1,0 +1,50 @@
+CREATE DATABASE People DEFAULT CHARACTER SET utf8;
+
+
+
+CREATE TABLE Users (
+  name VARCHAR(128), 
+  email VARCHAR(128)
+);
+
+DESCRIBE Users;
+
+INSERT INTO Users (name, email) VALUES ('Chuck', 'csev@virginia.edu') ;
+INSERT INTO Users (name, email) VALUES ('Sally', 'sally@virginia.edu') ;
+INSERT INTO Users (name, email) VALUES ('Somesh', 'somesh@virginia.edu') ;
+INSERT INTO Users (name, email) VALUES ('Caitlin', 'cait@virginia.edu') ;
+INSERT INTO Users (name, email) VALUES ('Ted', 'ted@virginia.edu') ;
+
+DELETE FROM Users WHERE email='ted@virginia.edu';
+
+UPDATE Users SET name='Charles' WHERE email='csev@virginia.edu';
+
+SELECT * FROM Users;
+
+SELECT * FROM Users WHERE email='csev@virginia.edu';
+
+SELECT * FROM Users ORDER BY email;
+
+SELECT * FROM Users WHERE name LIKE '%e%';
+
+SELECT * FROM Users ORDER BY email DESC LIMIT 2;
+
+SELECT * FROM Users ORDER BY email LIMIT 1,2;
+
+CREATE TABLE Users (
+  user_id INT UNSIGNED NOT NULL AUTO_INCREMENT, 
+  name VARCHAR(128), 
+  email VARCHAR(128),
+  PRIMARY KEY(user_id),
+  INDEX ( name )
+);
+
+To add the index after the table was created:
+
+ALTER TABLE Users ADD INDEX ( name );
+
+INSERT INTO Users (name, email) VALUES ('Chuck', 'csev@virginia.edu') ;
+INSERT INTO Users (name, email) VALUES ('Sally', 'sally@virginia.edu') ;
+INSERT INTO Users (name, email) VALUES ('Somesh', 'somesh@virginia.edu') ;
+INSERT INTO Users (name, email) VALUES ('Caitlin', 'cait@virginia.edu') ;
+INSERT INTO Users (name, email) VALUES ('Ted', 'ted@virginia.edu') ;
