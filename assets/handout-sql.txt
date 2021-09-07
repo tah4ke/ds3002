@@ -15,6 +15,8 @@ INSERT INTO People.Users (name, email) VALUES ('Somesh', 'somesh@virginia.edu') 
 INSERT INTO People.Users (name, email) VALUES ('Caitlin', 'cait@virginia.edu') ;
 INSERT INTO People.Users (name, email) VALUES ('Ted', 'ted@virginia.edu') ;
 
+##By default, MySQL workbench is started in safe mode, and can't update or delete, without a “WHERE” condition, see the error message. To fix it, in menu, selects “Edit” -> “Preferences” -> “SQL Queries”, uncheck the “Safe Updates” checkbox. Done, try reconnect and issue the delete command again.##
+
 DELETE FROM People.Users WHERE email='ted@virginia.edu';
 
 UPDATE People.Users SET name='Charles' WHERE email='csev@virginia.edu';
