@@ -2,7 +2,7 @@
 import csv
 
 # open file
-with open('/Users/johnhope/Desktop/DS3002/AMZN.csv') as csvDataFile:
+with open('/Users/Isabelle/Desktop/DS3002/AMZN.csv') as csvDataFile:
 # read file as csv
     csvReader = csv.reader(csvDataFile)
   
