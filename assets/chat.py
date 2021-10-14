@@ -1,4 +1,5 @@
 import nltk 
+import discord
 nltk.download('punkt')
 
 from nltk import word_tokenize,sent_tokenize
@@ -120,5 +121,36 @@ def chat():
         else:
             print("I didnt get that. Can you explain or try again.")
 
+import discord
 
-chat()
+class MyClient(discord.Client):
+    async def on_ready(self):
+        print('Logged in as')
+        print(self.user.name)
+        print(self.user.id)
+        print('------')
+
+    async def on_message(self, message):
+        # we do not want the bot to reply to itself
+        if message.author.id == self.user.id:
+            return
+       
+        else:
+           inp = message.content
+           result = model.predict([bag_of_words(inp, words)])[0]
+           result_index = np.argmax(result)
+           tag = labels[result_index]
+           
+           if result[result_index] > 0.7:
+               for tg in data["intents"]:
+                   if tg['tag'] == tag:
+                       responses = tg['responses']
+                
+               bot_response=random.choice(responses)
+               await message.channel.send(bot_response.format(message))
+           else:
+               await message.channel.send("I didnt get that. Can you explain or try again.".format(message))
+
+client = MyClient()
+client.run('ODk4MjIwNTcxNDg4MzA1MjAy.YWhDGA.WjF03ZTVkMIQvWvtSkWwBktyoww')
+#chat()
