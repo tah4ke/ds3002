@@ -1,5 +1,6 @@
 import nltk 
 import discord
+#This helps understand english punctuation...like the period in Mr. Jones is different the J.R.R. Tolkien
 nltk.download('punkt')
 
 from nltk import word_tokenize,sent_tokenize
