@@ -3,7 +3,7 @@ import discord
 nltk.download('punkt')
 
 from nltk import word_tokenize,sent_tokenize
-
+# Read moreon stemming here --> https://towardsdatascience.com/stemming-lemmatization-what-ba782b7c0bd8
 from nltk.stem.lancaster import LancasterStemmer
 stemmer = LancasterStemmer()
 
