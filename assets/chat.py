@@ -152,5 +152,5 @@ class MyClient(discord.Client):
                await message.channel.send("I didnt get that. Can you explain or try again.".format(message))
 
 client = MyClient()
-client.run('ODk4MjIwNTcxNDg4MzA1MjAy.YWhDGA.WjF03ZTVkMIQvWvtSkWwBktyoww')
+client.run('YOU TOKEN')
 #chat()
